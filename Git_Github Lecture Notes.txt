@@ -1,0 +1,55 @@
+Git Commands:
+
+    1. git clone [URL]:
+        -- Use this command to clone a repository located at [URL] into your local machine.
+
+    2. git add [filename]:
+        -- This basically tells Git to add those files to the repo the next time we make a commit (save a snapshot of repo). In other words, you tell Git that you want to track this file.
+
+    3. git commit -m [message]:
+        -- Save a snapshot of the current repository (sort of a last-step confirmation).
+
+        -- Every time you save a snapshot, Git forces you to name that snapshot with a [message]
+        e.g.,
+            ** git commit -m "added hello.html"
+
+    4. git status:
+        -- Show the current status of the repository
+
+    5. git push:
+        -- Upload the current/local repository to the web
+
+    6. git pull:
+        -- Download the latest version of the software (changes) from the web onto the local machine.
+
+    7. Merge conflicts:
+        -- Note that this is not a command, it's a topic to discuss in the following lines.
+
+        -- Merge conflicts happen for example, when someone or you change the code on github (commit a change); for example, a change
+        in some line in a file, and onto your local version of the repository, you make a change to the same line in the same file, and trying to pull changes from the online version (github) onto your local machine.
+
+        so Git doesn't know which change should be kept, yours(from local machine trying to be pushed online) or the
+        one made by another human being (it could be you via the web or someone else)
+
+        so what happens is that Git produces a merge report which takes the following form:
+
+        // lines of code
+        <<<<<<< HEAD
+        b = 0
+        ============
+        b = 2
+        >>>>>>> 854211762486311766952589
+        //lines of code
+
+
+        between "<<<<<<< HEAD" and "========" is the change on your local machine that you want to push.
+        between "======" and ">>>>>> 854211762486311766952589" is the change made on the web
+
+    8. git log:
+        -- show the history of commits of both the local and online versions of the repo.
+
+    9. git reset --hard <commit_hash>
+       git reset --hard origin/master
+
+        -- reset the repo to a previous commit (snapshot). It's similar to System Restore for Windows
+
