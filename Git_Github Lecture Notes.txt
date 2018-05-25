@@ -53,3 +53,14 @@ Git Commands:
 
         -- reset the repo to a previous commit (snapshot). It's similar to System Restore for Windows
 
+    10. git branch:
+        -- Show all branches
+
+        git branch <new_branch_name>:
+        -- Create a new branch
+
+    11. git checkout <branch_name>:
+        -- Move from the current branch the <branch_name> branch.
+
+    12. git merge <branch_name>:
+        -- Merge the current branch to the <branch_name> branch
