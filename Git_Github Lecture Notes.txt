@@ -70,4 +70,12 @@ Git Commands:
     type "git branch -a", then if you want to switch to a branch other than the master, then use the 
     checkout command as usual.
 
-    14. git pull command == git fetch (which fetches all latest commits that my local repository doesn't have e.g., updates) + git merge origin/master (which merges my local master branch with the origin/web/github master branch)   
+    14. git pull command == git fetch (which fetches all latest commits that my local repository doesn't have e.g., updates) + git merge origin/master (which merges my local master branch with the origin/web/github master branch) 
+
+    15. Forks:
+        -- Forking a repository means for example, user A has a repository, and user B who wants to contribute to this repository forks (take a copy of) this repository as if it was theirs, then user B could make changes to his own version of the repository.
+
+        -- It's similar to the idea of branching, but here you're taking a copy of an entire repository to another place while the original repository is not affected.
+
+    16. Pull Requests (A Github specific feature):
+        -- Pull requests are used to ask the owner of the repository to confirm changes to be applied to the repository. It's common when branching (merging some branch with the master branch of the repository) and forking (making changes to the repository on another side of the original repository then trying to merge the changes back to the original repository)
