@@ -64,3 +64,11 @@ Git Commands:
 
     12. git merge <branch_name>:
         -- Merge the current branch to the <branch_name> branch
+
+    13. Forks:
+        -- Forking a repository means for example, user A has a repository, and user B who wants to contribute to this repository forks (take a copy of) this repository as if it was theirs, then user B could make changes to his own version of the repository.
+
+        -- It's similar to the idea of branching, but here you're taking a copy of an entire repository to another place while the original repository is not affected.
+
+    14. Pull Requests (A Github specific feature):
+        -- Pull requests are used to ask the owner of the repository to confirm changes to be applied to the repository. It's common when branching (merging some branch with the master branch of the repository) and forking (making changes to the repository on another side of the original repository then trying to merge the changes back to the original repository)
