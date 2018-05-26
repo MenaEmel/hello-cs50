@@ -64,3 +64,10 @@ Git Commands:
 
     12. git merge <branch_name>:
         -- Merge the current branch to the <branch_name> branch
+
+    13. Note: when cloning a repository that has multiple branches and invocing "git branch" command,
+    it will only show that you have the master branch, but to see all branches (which are hidden),
+    type "git branch -a", then if you want to switch to a branch other than the master, then use the 
+    checkout command as usual.
+
+    14. git pull command == git fetch (which fetches all latest commits that my local repository doesn't have e.g., updates) + git merge origin/master (which merges my local master branch with the origin/web/github master branch)   
